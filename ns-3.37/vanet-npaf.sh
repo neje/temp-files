@@ -1,12 +1,12 @@
 #!/bin/bash
 
 RUN_START="1"
-RUN_STOP="100"
+RUN_STOP="200"
 
 CURRENT_RUN_START="1"
-CURRENT_RUN_STOP="100"
+CURRENT_RUN_STOP="200"
 
-SLIP_BETWEEN_SIMS="1m"
+SLIP_BETWEEN_SIMS="10s"
 
 # 1=OLSR; 2=AODV; 3=DSDV; 4=DSR
 ROUTING="2"
@@ -23,8 +23,8 @@ RATES="4kbps"
 # Size of packets (payload size) in bytes: 64B for small controll packets, 2048B for large video packets
 PACKET_SIZE="512"
 
-# Scenario: 0 = Random Waypoint model, 1 = Manhattan Grid from NS-2 trace (ns2Trace-<broj cvorova>.txt)
-SCENARIO=1
+# Scenario: 0 = Random Waypoint model, 1 = Manhattan Grid from NS-2 trace (ns2Trace-<broj cvorova>.txt), 2 = MG 2x2km semafor 1 lane
+SCENARIO=2
 
 # Name of the script (.cc file in the scratch folder) - use different files for different scenarios
 PROGRAM_NAME="vanet-npaf"
