@@ -468,7 +468,7 @@ RoutingExperiment::Run (int argc, char **argv)
   }
   case 1:
   {
-    sc = "MG_2x2km_semafor";
+    sc = "MG_2x2km_semafor_new";
     std::string traceFile;
     switch (nNodes)
     {
