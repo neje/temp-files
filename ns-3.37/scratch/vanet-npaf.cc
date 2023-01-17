@@ -549,6 +549,17 @@ RoutingExperiment::Run (int argc, char **argv)
     ns2.Install ();
     break;
   }
+  case 2:
+  {
+	  sc = "MG_2x2km_semafor";
+    //std::string traceFile = std::string("scratch/mg-telfor-15mps-semafor-") + std::to_string(nNodes) + std::string("-fcd.txt");
+    std::string traceFile = std::string("scratch/mg-telfor-15mps-semafor-350-fcd.txt");
+	  Ns2MobilityHelper ns2 = Ns2MobilityHelper (traceFile);
+
+	  // configure movements for each node, while reading
+	  ns2.Install ();
+	  break;
+  }
   default:
 	  NS_LOG_UNCOND ("Scenario not supported");
 	  NS_ASSERT (0);
