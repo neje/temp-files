@@ -24,7 +24,7 @@ RATES="4kbps"
 PACKET_SIZE="512"
 
 # Scenario: 0 = Random Waypoint model, 1 = Manhattan Grid from NS-2 trace (ns2Trace-<broj cvorova>.txt)
-SCENARIO=0
+SCENARIO=1
 
 # Name of the script (.cc file in the scratch folder) - use different files for different scenarios
 PROGRAM_NAME="vanet-npaf"
