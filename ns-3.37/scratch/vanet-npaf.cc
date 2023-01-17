@@ -469,76 +469,77 @@ RoutingExperiment::Run (int argc, char **argv)
   case 1:
   {
     sc = "MG_2x2km_semafor";
+    std::string traceFile;
     switch (nNodes)
     {
     case 50:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-050.txt");
+        traceFile = std::string("scratch/ns2Trace-050.txt");
         break;
       }
     case 100:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-100.txt");
+        traceFile = std::string("scratch/ns2Trace-100.txt");
         break;
       }
     case 150:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-150.txt");
+        traceFile = std::string("scratch/ns2Trace-150.txt");
         break;
       }
     case 200:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-200.txt");
+        traceFile = std::string("scratch/ns2Trace-200.txt");
         break;
       }
     case 250:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-250.txt");
+        traceFile = std::string("scratch/ns2Trace-250.txt");
         break;
       }
     case 300:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-300.txt");
+        traceFile = std::string("scratch/ns2Trace-300.txt");
         break;
       }
     case 350:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-350.txt");
+        traceFile = std::string("scratch/ns2Trace-350.txt");
         break;
       }
     case 400:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-400.txt");
+        traceFile = std::string("scratch/ns2Trace-400.txt");
         break;
       }
     case 450:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-450.txt");
+        traceFile = std::string("scratch/ns2Trace-450.txt");
         break;
       }
     case 500:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-500.txt");
+        traceFile = std::string("scratch/ns2Trace-500.txt");
         break;
       }
     case 550:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-550.txt");
+        traceFile = std::string("scratch/ns2Trace-550.txt");
         break;
       }
     case 600:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-600.txt");
+        traceFile = std::string("scratch/ns2Trace-600.txt");
         break;
       }
     case 650:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-650.txt");
+        traceFile = std::string("scratch/ns2Trace-650.txt");
         break;
       }
     case 700:
       {
-        std::string traceFile = std::string("scratch/ns2Trace-700.txt");
+        traceFile = std::string("scratch/ns2Trace-700.txt");
         break;
       }
     default:
