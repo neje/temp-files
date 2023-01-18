@@ -295,8 +295,8 @@ RoutingExperiment::Run (int argc, char **argv)
   double simAreaX = 2000.0; // m
   double simAreaY = 2000.0; // m
 
-  double simulationTime = 289.0; // in seconds
-  double netStartupTime = 10.0; // [s] time before any application starts sending data
+  double simulationTime = 500.0; // in seconds
+  double netStartupTime = 100.0; // [s] time before any application starts sending data
 
   std::string rate ("4kbps"); // application layer data rate
   std::string phyMode ("OfdmRate6MbpsBW10MHz"); // physical data rate and modulation type
@@ -316,6 +316,7 @@ RoutingExperiment::Run (int argc, char **argv)
   cmd.AddValue ("nNodes", "Number of nodes in simulation", nNodes);
   cmd.AddValue ("nSources", "Number of nodes that send data (max = nNodes/2)", nSources);
   cmd.AddValue ("simTime", "Duration of one simulation run.", simulationTime);
+  cmd.AddValue ("startupTime", "Network startup time before apps start sending packets.", netStartupTime);
 
   cmd.AddValue ("currentRngRun", "Current number of RngRun.", m_rngRun);
   cmd.AddValue ("startRngRun", "Start number of RngRun. Used in external rng run generation.", m_startRngRun);

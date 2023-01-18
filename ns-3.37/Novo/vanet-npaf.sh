@@ -8,6 +8,9 @@ CURRENT_RUN_STOP="200"
 
 SLIP_BETWEEN_SIMS="10s"
 
+SIM_TIME = "500" # [s]
+STARTUP_TIME = "100" # [s]
+
 # 1=OLSR; 2=AODV; 3=DSDV; 4=DSR
 ROUTING="2"
 
@@ -46,13 +49,13 @@ do
           echo x   Run = $run
           echo x   "./ns3 run \"$PROGRAM_NAME --scenario=$SCENARIO --routingProtocol=$r (protocol: 1=OLSR; 2=AODV; 3=DSDV; 4=DSR)"
           echo x   "      --nNodes=$node --nSources=$source --dataRate=$rate --packetSize=$PACKET_SIZE"
-          echo x   "      --startRngRun=$RUN_START --currentRngRun=$run --stopRngRun=$RUN_STOP\""
+          echo x   "      --startRngRun=$RUN_START --currentRngRun=$run --stopRngRun=$RUN_STOP --simTime=$SIM_TIME\""
           echo xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           echo 
           echo "Start time:"
 
           date
-          ./ns3 run "$PROGRAM_NAME --scenario=$SCENARIO --routingProtocol=$r --nNodes=$node --nSources=$source --dataRate=$rate --packetSize=$PACKET_SIZE --startRngRun=$RUN_START --currentRngRun=$run --stopRngRun=$RUN_STOP" 
+          ./ns3 run "$PROGRAM_NAME --scenario=$SCENARIO --routingProtocol=$r --nNodes=$node --nSources=$source --dataRate=$rate --packetSize=$PACKET_SIZE --startRngRun=$RUN_START --currentRngRun=$run --stopRngRun=$RUN_STOP --simTime=$SIM_TIME" 
           echo "StopTime:"
           date
           
